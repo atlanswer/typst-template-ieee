@@ -5,11 +5,16 @@
 // it as an article in the style of the IEEE.
 #let ieee_full(
   // The paper's title.
-  title: [Edit this to change the title of the paper],
+  title: [Preparation of Papers for IEEE TRANSATIONS and JOURNALS (February 2017)],
   // An array of authors. For each author you can specify a name,
   // department, organization, location, and email. Everything but
   // but the name is optional.
-  authors: (),
+  authors: (
+    (name: "First A. Author", ieee_membership: "Fellow, IEEE"),
+    (name: "Second B. Author"),
+    (name: "Third C. Author, Jr.", ieee_membership: "Member, IEEE"),
+  ),
+  thanks: (),
   // The paper's abstract. Can be omitted if you don't have one.
   abstract: none,
   // A list of index terms to display after the abstract.
