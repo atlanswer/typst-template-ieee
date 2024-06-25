@@ -30,7 +30,7 @@
   set document(title: title, author: authors.map(author => author.name))
 
   // Set the body font.
-  set text(font: "TeX Gyre Termes", size: 10pt)
+  set text(font: "Nimbus Roman No9 L", size: 10pt)
 
   // Enums numbering
   set enum(numbering: "1)a)i)")
@@ -180,6 +180,10 @@
 
     #if index-terms != () [
       #h(1em)_Index terms_---#h(weak: true, 0pt)#index-terms.join(", ")
+    ] else [#h(1em)_Index terms_---#h(weak: true, 0pt)Enter key words or phrases in
+      alphabetical order, separated by commas. For a list of suggested keywords, send
+      a blank e-mail to keywords\@ieee.org or visit
+      #underline("http://www.ieee.org/organizations/pubs/ani_prod/keywrd98.txt")
     ]
     #v(2pt)
   ]

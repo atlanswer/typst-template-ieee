@@ -24,30 +24,27 @@
       for Metals, Tsukuba, Japan (e-mail: author@nrim.go.jp).],
   ),
   abstract: [
-  These instructions give you guidelines for preparing papers for IEEE
-  Transactions and Journals. Use this document as a template if you are using
-  \LaTeX. Otherwise, use this document as an instruction set. The electronic file
-  of your paper will be formatted further at IEEE. Paper titles should be written
-  in uppercase and lowercase letters, not all uppercase. Avoid writing long
-  formulas with subscripts in the title; short formulas that identify the elements
-  are fine (e.g., "Nd--Fe--B"). Do not write ``(Invited)'' in the title. Full
-  names of authors are preferred in the author field, but are not required. Put a
-  space between authors' initials. The abstract must be a concise yet
-  comprehensive reflection of what is in your article. In particular, the abstract
-  must be self-contained, without abbreviations, footnotes, or references. It
-  should be a microcosm of the full article. The abstract must be between 150--250
-  words. Be sure that you adhere to these limits; otherwise, you will need to edit
-  your abstract accordingly. The abstract must be written as one paragraph, and
-  should not contain displayed mathematical equations or tabular material. The
-  abstract should include three or four different keywords or phrases, as this
-  will help readers to find it. It is important to avoid over-repetition of such
-  phrases as this can result in a page being rejected by search engines. Ensure
-  that your abstract reads well and is grammatically correct.
+    These instructions give you guidelines for preparing papers for IEEE
+    Transactions and Journals. Use this document as a template if you are using
+    LaTeX. Otherwise, use this document as an instruction set. The electronic file
+    of your paper will be formatted further at IEEE. Paper titles should be written
+    in uppercase and lowercase letters, not all uppercase. Avoid writing long
+    formulas with subscripts in the title; short formulas that identify the elements
+    are fine (e.g., "Nd--Fe--B"). Do not write "(Invited)" in the title. Full names
+    of authors are preferred in the author field, but are not required. Put a space
+    between authors' initials. The abstract must be a concise yet comprehensive
+    reflection of what is in your article. In particular, the abstract must be
+    self-contained, without abbreviations, footnotes, or references. It should be a
+    microcosm of the full article. The abstract must be between 150--250 words. Be
+    sure that you adhere to these limits; otherwise, you will need to edit your
+    abstract accordingly. The abstract must be written as one paragraph, and should
+    not contain displayed mathematical equations or tabular material. The abstract
+    should include three or four different keywords or phrases, as this will help
+    readers to find it. It is important to avoid over-repetition of such phrases as
+    this can result in a page being rejected by search engines. Ensure that your
+    abstract reads well and is grammatically correct.
   ],
-  index-terms: (
-    "Enter key words or phrases in alphabetical order, separated by commas. For a list of suggested keywords, ",
-    "send a blank e-mail to keywords@ieee.org or visit \underline {http://www.ieee.org/organizations/pubs/ani\_prod/keywrd98.txt}",
-  ),
+  // index-terms: (),
   bibliography: bibliography("refs.bib"),
 )
 
@@ -84,12 +81,12 @@ Use one space after periods and colons. Hyphenate complex modifiers:
 used \eqref{eq}.] Write instead, ``The potential was calculated by using
 \eqref{eq},'' or ``Using \eqref{eq}, we calculated the potential.''
 
-Use a zero before decimal points: ``0.25,'' not ``.25.'' Use "$"cm"^{3}$," not
+Use a zero before decimal points: "0.25," not ``.25.'' Use "$"cm"^3$," not
 ``cc.'' Indicate sample dimensions as ``0.1 cm
-$times$ 0.2 cm,'' not ``0.1 $times$ 0.2 $"cm"^{2}$.'' The abbreviation for
-``seconds'' is ``s,'' not ``sec.'' Use ``$"Wb/m"^{2}$'' or ``webers per square
-meter,'' not ``$"webers/m"^{2}$.'' When expressing a range of values, write ``7
-to 9'' or ``7--9,'' not ``7$tilde.op$9.''
+$times$ 0.2 cm,'' not ``0.1 #(math.times) 0.2 cm#super[2].'' The
+abbreviation for ``seconds'' is ``s,'' not ``sec.'' Use ``$"Wb/m"^{2}$'' or
+``webers per square meter,'' not ``$"webers/m"^{2}$.'' When expressing a range
+of values, write ``7 to 9'' or ``7--9,'' not "7#(math.tilde.op)9."
 
 A parenthetical statement at the end of a sentence is punctuated outside of the
 closing parenthesis (like this). (A parenthetical sentence is punctuated within
