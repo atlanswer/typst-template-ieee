@@ -3,7 +3,7 @@
 
 // This function gets your whole document as its `body` and formats
 // it as an article in the style of the IEEE.
-#let ieee(
+#let ieee_full(
   // The paper's title.
   title: [Edit this to change the title of the paper],
   // An array of authors. For each author you can specify a name,
