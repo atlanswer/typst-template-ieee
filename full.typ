@@ -26,7 +26,7 @@
   abstract: [
     These instructions give you guidelines for preparing papers for IEEE
     Transactions and Journals. Use this document as a template if you are using
-    LaTeX. Otherwise, use this document as an instruction set. The electronic file
+    Typst. Otherwise, use this document as an instruction set. The electronic file
     of your paper will be formatted further at IEEE. Paper titles should be written
     in uppercase and lowercase letters, not all uppercase. Avoid writing long
     formulas with subscripts in the title; short formulas that identify the elements
@@ -49,15 +49,16 @@
 )
 
 = Introduction <sec:introduction>
-\IEEEPARstart{T}{his} document is a template for \LaTeX. If you are reading a
-paper or PDF version of this document, please download the electronic file,
-trans\_jour.tex, from the IEEE Web site at \underline
-{http://www.ieee.org/authortools/trans\_jour.tex} so you can use it to prepare
-your manuscript. If you would prefer to use LaTeX, download IEEE's LaTeX style
-and sample files from the same Web page. You can also explore using the Overleaf
-editor at \underline
-{https://www.overleaf.com/blog/278-how-to-use-overleaf-with-}\discretionary{}{}{}\underline
-{ieee-collabratec-your-quick-guide-to-getting-started\#.}\discretionary{}{}{}\underline{xsVp6tpPkrKM9}
+This document is a template for Typst. If you are reading a paper or PDF version
+of this document, please download the electronic file, trans\_jour.tex, from the
+IEEE Web site at
+#underline("http://www.ieee.org/authortools/trans_jour.tex")
+so you can use it to prepare your manuscript. If you would prefer to use LaTeX,
+download IEEE's LaTeX style and sample files from the same Web page. You can
+also explore using the Overleaf editor at
+#underline(
+  "https://www.overleaf.com/blog/278-how-to-use-overleaf-with-ieee-collabratec-your-quick-guide-to-getting-started#.xsVp6tpPkrKM9",
+)
 
 If your paper is intended for a conference, please contact your conference
 editor concerning acceptable word processor formats for your particular
@@ -70,37 +71,50 @@ conference, please observe the conference page limits.
 Define abbreviations and acronyms the first time they are used in the text, even
 after they have already been defined in the abstract. Abbreviations such as
 IEEE, SI, ac, and dc do not have to be defined. Abbreviations that incorporate
-periods should not have spaces: write ``C.N.R.S.,'' not ``C. N. R. S.'' Do not
-use abbreviations in the title unless they are unavoidable (for example,
-``IEEE'' in the title of this article).
+periods should not have spaces: write "C.N.R.S.," not "C. N. R. S." Do not use
+abbreviations in the title unless they are unavoidable (for example,
+"IEEE" in the title of this article).
 
 == Other Recommendations
 Use one space after periods and colons. Hyphenate complex modifiers:
-``zero-field-cooled magnetization.'' Avoid dangling participles, such as,
-``Using \eqref{eq}, the potential was calculated.'' [It is not clear who or what
-used \eqref{eq}.] Write instead, ``The potential was calculated by using
-\eqref{eq},'' or ``Using \eqref{eq}, we calculated the potential.''
+"zero-field-cooled magnetization." Avoid dangling participles, such as, "Using
+@eq:1, the potential was calculated." [It is not clear who or what used @eq:1.]
+Write instead, "The potential was calculated by using @eq:1," or "Using @eq:1,
+we calculated the potential."
 
-Use a zero before decimal points: "0.25," not ``.25.'' Use "$"cm"^3$," not
-``cc.'' Indicate sample dimensions as ``0.1 cm
-$times$ 0.2 cm,'' not ``0.1 #(math.times) 0.2 cm#super[2].'' The
-abbreviation for ``seconds'' is ``s,'' not ``sec.'' Use ``$"Wb/m"^{2}$'' or
-``webers per square meter,'' not ``$"webers/m"^{2}$.'' When expressing a range
-of values, write ``7 to 9'' or ``7--9,'' not "7#(math.tilde.op)9."
+Use a zero before decimal points: "0.25," not ".25." Use "cm#super[3]," not
+"cc." Indicate sample dimensions as "0.1 cm
+#math.times 0.2 cm," not "0.1 #math.times 0.2 cm#super[2]." The abbreviation for "seconds"
+is "s," not "sec." Use "Wb/m#super[2]" or "webers per square meter," not "webers/m#super[2]."
+When expressing a range of values, write "7 to 9" or "7--9," not "7#(math.tilde.op)9."
 
 A parenthetical statement at the end of a sentence is punctuated outside of the
 closing parenthesis (like this). (A parenthetical sentence is punctuated within
 the parentheses.) In American English, periods and commas are within quotation
-marks, like ``this period.'' Other punctuation is ``outside''! Avoid
-contractions; for example, write ``do not'' instead of ``don't.'' The serial
-comma is preferred: ``A, B, and C'' instead of ``A, B and C.''
+marks, like "this period." Other punctuation is "outside"! Avoid contractions;
+for example, write "do not" instead of "don't." The serial comma is preferred: "A,
+B, and C" instead of "A, B and C."
 
 If you wish, you may write in the first person singular or plural and use the
-active voice (``I observed that $\ldots$'' or ``We observed that $\ldots$''
-instead of ``It was observed that $\ldots$''). Remember to check spelling. If
+active voice ("I observed that #math.dots.h" or "We observed that #math.dots.h"
+instead of "It was observed that #math.dots.h"). Remember to check spelling. If
 your native language is not English, please get a native English-speaking
 colleague to carefully proofread your paper.
 
 Try not to use too many typefaces in the same article. You're writing scholarly
 papers, not ransom notes. Also please remember that MathJax can't handle really
 weird typefaces.
+
+== Equations
+
+Number equations consecutively with equation numbers in parentheses flush with
+the right margin, as in @eq:1. To make your equations more compact, you may use
+the solidus (~/~), the exp function, or appropriate exponents. Use parentheses
+to avoid ambiguities in denominators. Punctuate equations when they are part of
+a sentence, as in
+$ E = m c^2 $ <eq:1>
+
+Be sure that the symbols in your equation have been defined before the equation
+appears or immediately following. Italicize symbols ($T$ might refer to
+temperature, but T is the unit tesla). Refer to "@eq:1," not "Eq. @eq:1" or
+"equation @eq:1," except at the beginning of a sentence: "Equation @eq:1 is #math.dots.h ."
